@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Ninja - intro</title>
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' />
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js' ></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body id="intro">
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ninja_PNG12.png" >
+            </div>
+            <div class="card-content">
+              <h4>Sei un vero ninja dei numeri?</h4>
+              <p>Prova la tua abilità destreggiandoti tra i numeri.</p>
+              <p>clicca ogni numero in sequenza, dal più piccolo al più grande!</p>
+            </div>
+            <form class="card-action primary" action="game.html" method="GET">
+              <div class="input-field">
+                <input value="1" id="level" type="number"  min="1" max="10" required name="level" class="validate">
+                <label for="level">Scegli il livello</label>
+
+              </div>
+            
+              <button class="waves-effect waves-light btn" type="submit">Gioca Ora</a>
+            </form>
+          </div>
+        </div>
+     
+      </div>
+      
+      <a class="attribution" href="https://www.freepik.com/vectors/tree">Tree vector created by macrovector - www.freepik.com</a>
+</body>
+</html>

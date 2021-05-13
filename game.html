@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Ninja - Game</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css' />
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="game.js"></script>
+</head>
+
+<body id="game">
+
+  <ul class="numbers"></ul>
+  <h1 id="panel">
+    time: <span class="time">0</span>''
+    score: <span class="score">0</span></h1>
+
+  <a class="attribution" href="https://www.freepik.com/vectors/tree">Tree vector created by macrovector -
+    www.freepik.com</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Congratulazioni</h4>
+      <div class="modal-cont">
+      <div class="modal-left">
+        <img src="images/ninja_PNG12.png" >
+      </div>
+              <div class="modal-right">
+          <p>Livello completato! </p>
+          <p>Hai totalizzato <span class="score"></span> punti in <span class="time"></span> secondi</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="modal-close waves-effect waves-green btn-flat">continua!</a>
+    </div>
+  </div>
+</body>
+
+</html>
