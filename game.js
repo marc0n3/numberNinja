@@ -10,14 +10,38 @@ function inizializza(level){
         var numero = 1 + index;
         var numberEl = $("<li>"+numero+"</li>");
 
-        numberEl.on("click",onClick)
+        numberEl.on("click",onClick);
+
+        numberEl.css("order",Math.round(Math.random()*100))
 
         $(".numbers").append(numberEl)
     }
 }
 
-function onClick(){
-    alert("cliccato!!!!!")
+function getNumber(el){
+    return parseInt(el.textContent)
+}
+
+function onClick(e){
+    var element = e.currentTarget;
+    $(element).addClass("clicked");
+
+    var clickedNumber = getNumber(element)
+
+    var isOk = true;
+
+    $(".numbers .clicked").each(function(index, clickedEl){
+        var otherClicked = getNumber(clickedEl);
+        if (clickedNumber<otherClicked){
+            isOk=false;
+        }
+    });
+
+    if(isOk){
+        alert("Bravo!")
+    }else{
+        alert("Errore!");
+    }
 }
 
 function onReady(){
