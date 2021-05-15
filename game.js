@@ -6,7 +6,7 @@ function onReady(){
 
 function orologio(){
     var now = new Date().getTime()
-    var elapsed = now-startTime;
+    var elapsed = now-startTime; 
     var realSeconds = Math.round(elapsed/1000);
     $(".time").html(realSeconds)
 }
