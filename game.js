@@ -43,7 +43,7 @@ function onClick(e){
       $(".score").html(score);
       M.toast({html:"Bravissimo!!!"})
     }else{
-        M.toast({html:"Gradoni!!!"})
+        M.toast({html:"Male!!!"})
     }
 }
 
