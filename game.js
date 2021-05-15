@@ -1,4 +1,5 @@
-var startTime = new Date().getTime()
+var startTime = new Date().getTime();
+var score = 0;
 
 function inizializza(level){
     var numberOfItems = Math.pow(level+2,2);
@@ -38,9 +39,11 @@ function onClick(e){
     });
 
     if(isOk){
-        alert("Bravo!")
+      score = score + 100;
+      $(".score").html(score);
+      M.toast({html:"Bravissimo!!!"})
     }else{
-        alert("Errore!");
+        M.toast({html:"Gradoni!!!"})
     }
 }
 
